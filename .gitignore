@@ -240,7 +240,34 @@ public/sitemap.xml
 .vercel
 
 # typescript
+*.tsbuildinfo
 next-env.d.ts
+
+# Jest
+/test-output.log
+/.jest-cache
+
+# Local development
+/.devcontainer
+dev-notes.md
+TODO.md
+
+# PWA files
+**/public/workbox-*.js
+**/public/sw.js
+**/public/service-worker.js
+
+# Storybook
+/storybook-static
+
+# Local Netlify folder
+.netlify
+
+# Sentry
+.sentryclirc
+
+# Turbopack
+.turbo
 
 # Contentlayer stuff
 .contentlayer
@@ -255,7 +282,5 @@ next-env.d.ts
 # AWS User-specific
 !/data/_org/
 
-
 # User Custom
 /.idea
-

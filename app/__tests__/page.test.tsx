@@ -1,11 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import Home from '../page';
 import '@testing-library/jest-dom';
+import type { ImageProps } from 'next/image';
 
 // Mock the next/image component
 jest.mock('next/image', () => ({
   __esModule: true,
-  default: ({ src, alt, ...props }: any) => {
+  default: ({ src, alt, ...props }: Omit<ImageProps, "src" | "alt"> & { src: string, alt: string }) => {
     // Convert boolean attributes to strings to avoid React warnings
     const safeProps = { ...props };
     if (typeof safeProps.priority === 'boolean') {

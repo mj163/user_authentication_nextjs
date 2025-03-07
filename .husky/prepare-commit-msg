@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 
-# Check if the commit is not a merge commit and not a rebase
-if [ -z "$HUSKY_SKIP_HOOKS" ] && [ -t 1 ] && [ -z "${2}" ]; then
-  exec < /dev/tty && npx cz --hook || true
+# Optional prepare-commit-msg hook for customizing commit messages
+# You can remove this file if not using it
+
+# If using Commitizen
+if [ -z "${2-}" ]; then
+  exec < /dev/tty && node_modules/.bin/cz --hook || true
 fi

@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
 
 # Run tests with output saving to prevent redirection issues
 npm test | tee test-output.log
