@@ -1,3 +1,5 @@
-# Changelog
+## 0.1.0 (2025-03-07)
 
-All notable changes to this project will be documented in this file.
+### Bug Fixes
+
+* **release-it fix:** fixing the automated CHANGELOG.md feature 35f8623
