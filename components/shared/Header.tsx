@@ -9,24 +9,24 @@ export default function Header() {
     <header className="fixed w-full bg-white shadow-md z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-800">
+          <Link className="text-2xl font-bold text-gray-800" href="/">
             R. Dolce Group
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">
+            <Link className="text-gray-600 hover:text-gray-900" href="/">
               Home
             </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-gray-900">
+            <Link className="text-gray-600 hover:text-gray-900" href="/blog">
               Blog
             </Link>
-            <Link href="/team" className="text-gray-600 hover:text-gray-900">
+            <Link className="text-gray-600 hover:text-gray-900" href="/team">
               Meet the Team
             </Link>
             <Link 
-              href="/signup"
               className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+              href="/signup"
             >
               Login
             </Link>
@@ -40,11 +40,11 @@ export default function Header() {
             <svg
               className="w-6 h-6"
               fill="none"
+              stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
-              stroke="currentColor"
             >
               {isMenuOpen ? (
                 <path d="M6 18L18 6M6 6l12 12" />
@@ -60,29 +60,29 @@ export default function Header() {
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
               <Link
-                href="/"
                 className="text-gray-600 hover:text-gray-900"
+                href="/"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
-                href="/blog"
                 className="text-gray-600 hover:text-gray-900"
+                href="/blog"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link
-                href="/team"
                 className="text-gray-600 hover:text-gray-900"
+                href="/team"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Meet the Team
               </Link>
               <Link
-                href="/signup"
                 className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-center"
+                href="/signup"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Login

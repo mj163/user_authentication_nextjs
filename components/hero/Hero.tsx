@@ -15,14 +15,14 @@ export default function Hero() {
           </p>
           <div className="space-x-4">
             <Link
-              href="/signup"
               className="inline-block bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+              href="/signup"
             >
               Get Started
             </Link>
             <Link
-              href="/read-more"
               className="inline-block border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              href="/read-more"
             >
               Read more
             </Link>

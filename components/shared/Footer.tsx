@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <Link href="/" className="text-2xl font-bold">
+            <Link className="text-2xl font-bold" href="/">
               R. Dolce Group
             </Link>
             <p className="text-gray-400">
@@ -21,17 +21,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white">
+                <Link className="text-gray-400 hover:text-white" href="/">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white">
+                <Link className="text-gray-400 hover:text-white" href="/blog">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/team" className="text-gray-400 hover:text-white">
+                <Link className="text-gray-400 hover:text-white" href="/team">
                   Meet the Team
                 </Link>
               </li>
@@ -43,17 +43,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white">
+                <Link className="text-gray-400 hover:text-white" href="/contact">
                   Contact Support
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-400 hover:text-white">
+                <Link className="text-gray-400 hover:text-white" href="/terms">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-400 hover:text-white">
+                <Link className="text-gray-400 hover:text-white" href="/privacy">
                   Privacy Policy
                 </Link>
               </li>
