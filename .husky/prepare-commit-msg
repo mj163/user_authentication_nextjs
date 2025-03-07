@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# Check if the commit is not a merge commit and not a rebase
+if [ -z "$HUSKY_SKIP_HOOKS" ] && [ -t 1 ] && [ -z "${2}" ]; then
+  exec < /dev/tty && npx cz --hook || true
+fi
