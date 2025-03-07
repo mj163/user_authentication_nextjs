@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import RootLayout from '../layout';
 import '@testing-library/jest-dom';
 

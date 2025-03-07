@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
+# Run commitlint to ensure commit messages follow conventional format
 npx --no -- commitlint --edit ${1}

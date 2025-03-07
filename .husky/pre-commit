@@ -1,4 +1,14 @@
 #!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-# Run tests
-npm test
+# Run tests with output saving to prevent redirection issues
+npm test | tee test-output.log
+TEST_EXIT_CODE=${PIPESTATUS[0]}
+
+# Only proceed if tests passed
+if [ $TEST_EXIT_CODE -ne 0 ]; then
+  echo "❌ Tests failed. Please fix the issues before committing."
+  exit 1
+fi
+
+echo "✅ All tests passed!"

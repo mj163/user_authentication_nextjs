@@ -10,6 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci --coverage",
+    "generate-test": "node ./scripts/generate-test.js",
     "release": "release-it",
     "prepare": "husky install",
     "commit": "cz",
