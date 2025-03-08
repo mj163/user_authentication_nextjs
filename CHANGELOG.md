@@ -1,10 +1,14 @@
-## 0.1.0 (2025-03-07)
+## 0.1.0 (2025-03-08)
 
 ### ⚠ BREAKING CHANGES
 
 * **tests:** Husky configuration format has been updated to v9
 * **tests:** The pre-commit hook now writes
  test output to a log file which is gitignored.
+
+### Features
+
+* **layout:** implement new layout components and page structure ([5f621f2](https://github.com/mj163/user_authentication_nextjs/commit/5f621f2c356ed7a2e49369ed4fefe2376d18f5a4))
 
 ### Bug Fixes
 
